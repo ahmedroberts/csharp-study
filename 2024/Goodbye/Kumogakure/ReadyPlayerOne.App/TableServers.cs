@@ -16,6 +16,7 @@ namespace ReadyPlayerOne.App
             servers.Add("Iveta Cleo");
             servers.Add("Evelyn Alzbeta");
             servers.Add("Alexander Lamar");
+            servers.Add("Destine Nicole");
             servers.Add("Ahmed Omar");
             /*
              * servers.Add("Server 4");
