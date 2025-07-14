@@ -45,6 +45,22 @@ namespace ReadyPlayerOne.App
             //nextServer = (nextServer + 1) % servers.Count;  
             
             return serverName;
-        }   
+        }
+
+        public void ListServers() {
+            TableServers currServers = new TableServers();
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine("");
+                }
+                Console.WriteLine("The next Server is: " + currServers.GetNextServer());
+            }
+
+            Console.WriteLine("\nPress any key to exit.");
+            Console.ReadLine();
+        }
     }
 }

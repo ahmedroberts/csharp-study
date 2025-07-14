@@ -1,4 +1,6 @@
-﻿namespace ReadyPlayerOne.App
+﻿using ReadyPlayerOne.App.People;
+
+namespace ReadyPlayerOne.App
 {
     class Program
     {
@@ -7,24 +9,10 @@
             Console.WriteLine("\nJumbo, Rafiki!\nAhmed is the 9th Raikage.\n");
 
             TableServers tableServers = new TableServers();
+            //tableServers.ListServers();
 
-            for (int i = 0; i < 10; i++)
-            {
-                if (i % 3 == 0)
-                {
-                    Console.WriteLine("");
-                }
-                Console.WriteLine("The next Server is: " + tableServers.GetNextServer());
-            }
-
-
-
-            Console.WriteLine("\nPress any key to exit.");
-
-
-
-
-            Console.ReadLine();
+            Person myPerson = new Person("Ahmed", "Omar", 30, "AhmedOmar@email.ai");
+            myPerson.Greeting();
         }
     }
 }
